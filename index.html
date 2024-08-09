@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quotes Generator✍</title>
   <link rel="stylesheet" href="src/style.css">
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -13,16 +15,16 @@
       <h1>Quotes Generator AI</h1>
     </header>
     <main>
-      <form>
-        <input type="text" placeholder="Enter your topic for generate the quotes with AI" class="input-topic" autofocus
-          autocomplete="off">
-        <input type="submit" value="Submit" class="submit-button">
+      <form id="input-form">
+        <input type="text" required placeholder="Enter your topic for generate the quotes with AI" class="input-topic"
+          id="input-topic" autofocus autocomplete="off">
+        <input type="submit" value="Submit" class="submit-button" id="submit-button">
         <small>e.g. Technology, Woman, or Dream</small>
       </form>
   </div>
 
-  <div class="quotes-generator">
-    <div class="generating"></div>
+  <div class="quotes-generator" id="quotes-container">
+    <div class="generating-quote" id="generating-quote"></div>
   </div>
   </main>
   <footer>

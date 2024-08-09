@@ -61,6 +61,11 @@ small {
   display: block;
 }
 
+.generating-quote {
+  font-size: larger;
+  color: #424874;
+}
+
 footer {
   font-size: 15px;
   text-align: center;

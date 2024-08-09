@@ -12,7 +12,7 @@ function GetApi(event) {
   let userInput = document.querySelector("#input-topic");
   let apiKey = "0a22ffd903a7dat6od52d64479b35f32";
   let prompt =
-    "You are a generator quotes expert and love to write short quotes. You mission is to generate a quotes in 2 or 3 sentences, and use <blockquote> around the quote and give emoji at the end. Make sure to follow the user instructions.";
+    "You are a generator quotes expert and love to write short quotes. You mission is to generate a quotes in 2 or 3 sentences, and use <blockquote> around the quote with quotation mark and give emoji at the end. Make sure to follow the user instructions.";
   let context = `User instructions: Generate a quotes about ${userInput.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
   axios.get(apiUrl).then(displayQuotes);
@@ -21,7 +21,7 @@ function GetApi(event) {
   quotesContainer.classList.add("hidden");
   let generatingQuote = document.querySelector("#generating-quote");
   new Typewriter("#generating-quote", {
-    strings: `generate quotes for topic ${userInput.value}`,
+    strings: `Generate quotes for topic ${userInput.value} ⏳⏳⏳`,
     autoStart: true,
     delay: 1,
     cursor: "",

@@ -19,6 +19,10 @@ h1 {
   color: #424874;
 }
 
+.input-container {
+  display: flex;
+}
+
 .input-topic {
   width: 500px;
   padding: 10px 15px;
